@@ -16,6 +16,7 @@ you can Implement the above Interface like the below sample.
 
 
 ```c
+using EasyException.Abstractions;
 
  public class ErrorHandlingService : IErrorHandlingService
     {
