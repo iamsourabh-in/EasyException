@@ -16,6 +16,7 @@ you can Implement the above Interface like the below sample.
 
 
 ```c
+using EasyException.Abstractions;
 
  public class ErrorHandlingService : IErrorHandlingService
     {
@@ -56,7 +57,7 @@ And then configuring the app builder you can tell the app to use the middleware.
 ```c
  public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
  {
-   app.UseExceptionHandling();
+   app.UseEasyExceptionHandling();
    ...
    
 ```
