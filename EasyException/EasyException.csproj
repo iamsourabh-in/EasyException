@@ -1,7 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>EasyException</PackageId>
+    <Version>1.0.1</Version>
+    <Authors>Sourabh Rustagi</Authors>
+    <Company>codeRusty</Company>
+    <PackageTags>Microsoft; .net-core; Exception Handling</PackageTags>
+    <Description>
+      Easy Exception is a C# library to make Exception Handling Easy in .Net core App/Api.
+      You can Register your own service to handle the Exception and return a standard response in every Exception.
+    </Description>
+    <PackageProjectUrl>https://github.com/codeRusty/EasyException</PackageProjectUrl>
+   <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
@@ -9,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>

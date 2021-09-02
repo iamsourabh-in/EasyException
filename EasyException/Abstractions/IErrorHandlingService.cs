@@ -6,6 +6,11 @@ namespace EasyException.Abstractions
 {
     public interface IErrorHandlingService
     {
-        public Task<ErrorResponse> HandleException(Exception context);
+        /// <summary>
+        /// When and Exception is Raised this HandleException is invoked
+        /// </summary>
+        /// <param name="exception"></param>
+        /// <returns></returns>
+        Task<ErrorResponse> HandleException(Exception exception);
     }
 }

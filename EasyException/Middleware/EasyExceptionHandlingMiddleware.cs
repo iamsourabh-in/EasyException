@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 
 namespace EasyException.Middleware
 {
-    public class ExceptionHandlingMiddleware
+    public class EasyExceptionHandlingMiddleware
     {
         public RequestDelegate requestDelegate;
         private readonly IErrorHandlingService _errorService;
 
-        public ExceptionHandlingMiddleware(RequestDelegate requestDelegate, IErrorHandlingService errorService)
+        public EasyExceptionHandlingMiddleware(RequestDelegate requestDelegate, IErrorHandlingService errorService)
         {
             this.requestDelegate = requestDelegate;
             _errorService = errorService;
